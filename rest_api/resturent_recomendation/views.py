@@ -8,7 +8,7 @@ import pandas as pd
 class ResturentRecomendationView(GenericAPIView):
 
     def post(self, request):
-        dataset = pd.read_csv(r'/home/sandaruwan/rest_api/rest_api/datasets/resturents.csv')
+        dataset = pd.read_csv(r'C:\Users\Dell\Desktop\rest_api\rest_api\datasets\resturents.csv')
 
         try:
             city = request.data['city'].lower()

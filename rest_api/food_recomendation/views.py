@@ -29,7 +29,7 @@ class FoodRecomendationView(GenericAPIView):
             veg_st = user_details.first().veg_status
 
             # Read dataset
-            dataset = pd.read_csv("/home/sandaruwan/rest_api/rest_api/datasets/foods_details.csv")
+            dataset = pd.read_csv(r"C:\Users\Dell\Desktop\rest_api\rest_api\datasets\foods_details.csv")
             
             # Function to filter vegetarian/non-vegetarian foods
             def filter_veg_status(data, veg_status):
@@ -100,7 +100,7 @@ class RecommendMealsView(GenericAPIView):
                 self.diab_level = ""
 
                 # read dataset
-                dataset = pd.read_csv(r"/home/sandaruwan/rest_api/rest_api/datasets/meal_plans.csv")
+                dataset = pd.read_csv(r"C:\Users\Dell\Desktop\rest_api\rest_api\datasets\meal_plans.csv")
 
                 # filter veg, non-veg ststus
                 def filter_veg_status(data, status):
